@@ -86,39 +86,44 @@ para reinar con el Señor.
 
   getsemani: {
     id: "getsemani",
-    number: "Canción Especial",
-    cover: "img/cristo_ninos.jpg",
+    number: "Himno #1009",
+    cover: "img/himnario_nuevo.png",
     title: "Getsemaní",
-    subtitle: "Himno Especial • Música de la Iglesia / Revista Liahona",
-    url: "https://www.churchofjesuschrist.org/study/liahona/2018/03/children/gethsemane?lang=spa",
-    source: "Música de la Iglesia • Revista Liahona (marzo de 2018) • Canciones para los niños",
-    lyrics: `1. Cristo fue a orar al jardín de paz
-con paso lento al andar.
-Solo el Señor, por Su amor,
-pudo ir hasta tal lugar.
-Getsemaní. Él me ama a mí.
-Se ofreció a ir allá, Getsemaní.
+    subtitle: "Himno Especial • Himnos: Para el hogar y la iglesia, N.º 1009",
+    url: "https://www.churchofjesuschrist.org/study/music/hymns-for-home-and-church/gethsemane?lang=spa",
+    source: "Himnos: Para el hogar y la iglesia, N.º 1009 (Melanie M. Hoffman)",
+    lyrics: `1. Cuando en el jardín,
+al pensar en mí,
+Jesús se arrodilló,
+todo dolor Él tomó
+pronunciando Su oración.
 
-2. La maldad, el pesar, la oscuridad,
-todo eso Jesús sufrió.
-Al dormir los demás, Él fue a luchar,
-a hacer lo que prometió.
-Getsemaní. Él me ama a mí.
-Se ofreció a ir allá, Getsemaní.
+¡Getsemaní! Él me ama a mí.
+Jesús sufrió por mí en Getsemaní.
 
-3. No hubo más difícil acción.
-Nunca se sintió tal dolor.
-Mayor batalla no se ganó.
-¡Esto lo hizo Cristo!
-Ganó la lucha Cristo.
+2. Toda angustia sintió
+y Él cumplió
+lo que al Padre le prometió.
+Y así fue a orar, en soledad,
+mostrando Su gran amor.
 
-4. Getsemaní. Él me ama a mí.
-Él me dio Su don allá.
-Getsemaní. Él me ama a mí.
-Y me da Su don de allá,
-Getsemaní.
+¡Getsemaní! Él me ama a mí.
+Jesús sufrió por mí en Getsemaní.
 
-— Letra y música: Melanie Hoffman. © Hoffman House, Inc. / Intellectual Reserve, Inc.`
+La obra más difícil cumplió,
+jamás se vio sufrir tal dolor;
+la gran batalla Jesús la ganó.
+¡Eso hizo Cristo!
+¡La victoria es de Cristo!
+
+¡Getsemaní! Él me ama a mí.
+Él me dio Su don sin fin en Getsemaní.
+Getsemaní! Él me ama a mí.
+Él me da Su don sin fin en Getsemaní.
+
+— Letra: Melanie M. Hoffman, 2007; traducción al español, 2024.
+— Música: Melanie M. Hoffman, 2007; arreglo de Roger C. Hoffman, 2023.
+— Pasajes de las Escrituras: Mateo 26:36–45; Doctrina y Convenios 19:16–19.`
   },
 
   loveoneanother: {
@@ -126,7 +131,7 @@ Getsemaní.
     number: "Himno #203 / #308",
     cover: "img/himnario_clasico.png",
     title: "Como os he amado / Love One Another",
-    subtitle: "Especial de Coro • En inglés y español",
+    subtitle: "Himno de Clausura • Interpretado por el Coro del Barrio La Concordia",
     url: "https://www.churchofjesuschrist.org/study/manual/hymns/love-one-another?lang=spa",
     source: "Himnos de la Iglesia, N.º 203 (Amad a otros) / Hymns, No. 308 (Love One Another)",
     lyrics: `[VERSIÓN EN INGLÉS - INTERPRETACIÓN DEL CORO]
@@ -148,34 +153,6 @@ si os amáis unos a otros.
 
 — Letra y música: Luacine Clark Fox, 1914–2002. © 1961, 1989 Intellectual Reserve, Inc.
 — Pasajes de las Escrituras: Juan 13:34–35; 1 Juan 4:11.`
-  },
-
-  himnofinal: {
-    id: "himnofinal",
-    number: "Himno #10",
-    cover: "img/himnario_clasico.png",
-    title: "Te damos, Señor, nuestras gracias",
-    subtitle: "Himno Final Congregacional • Himnario de la Iglesia",
-    url: "https://www.churchofjesuschrist.org/study/manual/hymns/we-thank-thee-o-god-for-a-prophet?lang=spa",
-    source: "Himnos de la Iglesia, N.º 10",
-    lyrics: `1. Te damos, Señor, nuestras gracias
-que mandas de nuevo un profeta
-que guía con gran rectitud
-las almas que buscan Sión.
-Te damos las gracias por cada merced
-que derrama Tu mano paternal
-sobre nosotros con gran santidad.
-
-2. Cuando nos cercan tinieblas,
-y el mal nos quiere abatir,
-en Dios encontramos consuelo;
-Su gracia nos va a sostener.
-Jamás dudaremos de Su gran bondad,
-y la senda angosta y recta al fin
-nos llevará con gozo a Su hogar.
-
-— Letra: William Fowler, 1830–1865.
-— Música: Caroline E. Sheridan Norton, 1808–c. 1877.`
   }
 };
 
