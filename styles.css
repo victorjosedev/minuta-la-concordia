@@ -718,7 +718,6 @@ body.chapel-mode .quick-scan-pill {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .agenda-item:hover {
@@ -751,6 +750,8 @@ body.chapel-mode .agenda-item.active-item {
   letter-spacing: 0.8px;
   padding: 2px 8px;
   border-radius: var(--radius-pill);
+  box-shadow: 0 2px 6px rgba(0, 45, 90, 0.25);
+  z-index: 2;
 }
 
 body.chapel-mode .agenda-item.active-item::before {
