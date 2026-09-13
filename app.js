@@ -12,7 +12,7 @@ const HYMNS_DATA = {
     title: "Amazing Grace (Sublime gracia)",
     subtitle: "Himno de Apertura • Interpretado en inglés por los JAS del Barrio",
     url: "https://www.churchofjesuschrist.org/study/music/hymns-for-home-and-church/amazing-grace?lang=spa",
-    source: "Himnos: Para el hogar y la iglesia, N.º 1010 (Interpretado en inglés por los Jóvenes Adultos Solteros)",
+    source: "Himnos: Para el hogar y la iglesia • N.º 1010 (JAS)",
     lyrics: `[VERSIÓN EN INGLÉS - INTERPRETACIÓN DE LOS JAS]
 1. Amazing grace—how sweet the sound—
 That saved a wretch like me!
@@ -58,7 +58,7 @@ me lleva a Su hogar.
     title: "La Santa Cena",
     subtitle: "Himno Sacramental • Himnario de la Iglesia",
     url: "https://www.churchofjesuschrist.org/study/manual/hymns/while-of-these-emblems-we-partake-saul?lang=spa",
-    source: "Himnos de La Iglesia de Jesucristo de los Santos de los Últimos Días, N.º 103",
+    source: "Himnos de la Iglesia • N.º 103",
     lyrics: `1. La Santa Cena, al tomar,
 a Cristo quiero recordar,
 mostrándole de corazón
@@ -91,7 +91,7 @@ para reinar con el Señor.
     title: "Getsemaní",
     subtitle: "Himno Especial • Himnos: Para el hogar y la iglesia, N.º 1009",
     url: "https://www.churchofjesuschrist.org/study/music/hymns-for-home-and-church/gethsemane?lang=spa",
-    source: "Himnos: Para el hogar y la iglesia, N.º 1009 (Melanie M. Hoffman)",
+    source: "Himnos: Para el hogar y la iglesia • N.º 1009",
     lyrics: `1. Cuando en el jardín,
 al pensar en mí,
 Jesús se arrodilló,
@@ -133,7 +133,7 @@ Getsemaní! Él me ama a mí.
     title: "Como os he amado / Love One Another",
     subtitle: "Himno de Clausura • Interpretado por el Coro del Barrio La Concordia",
     url: "https://www.churchofjesuschrist.org/study/manual/hymns/love-one-another?lang=spa",
-    source: "Himnos de la Iglesia, N.º 203 (Amad a otros) / Hymns, No. 308 (Love One Another)",
+    source: "Himnos de la Iglesia • N.º 203 / #308 (Coro)",
     lyrics: `[VERSIÓN EN INGLÉS - INTERPRETACIÓN DEL CORO]
 As I have loved you,
 Love one another.
