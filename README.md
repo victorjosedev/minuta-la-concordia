@@ -18,13 +18,12 @@ Minuta interactiva y litúrgica para la Conferencia de Barrio La Concordia, dise
 - **Modo Capilla**: Tema oscuro atenuado para lectura cómoda sin deslumbrar.
 
 ## 🚀 Despliegue en GitHub Pages
-1. Crea un repositorio en tu cuenta de GitHub (por ejemplo, `minuta-la-concordia`).
-2. Sube el código:
-   ```bash
-   git remote add origin https://github.com/TU_USUARIO/minuta-la-concordia.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. En GitHub, ve a **Settings** > **Pages**.
-4. En **Branch**, selecciona `main` y la carpeta `/(root)`, luego haz clic en **Save**.
-5. ¡Listo! En segundos tu minuta estará publicada en: `https://TU_USUARIO.github.io/minuta-la-concordia/`
+Para activar el sitio web público en GitHub:
+1. En tu repositorio [github.com/victorjosedev/minuta-la-concordia](https://github.com/victorjosedev/minuta-la-concordia), ve a la pestaña **Settings** (Ajustes).
+2. En el menú lateral izquierdo, haz clic en **Pages**.
+3. En la sección **Build and deployment** > **Branch**:
+   - Selecciona la rama: **`main`**
+   - Carpeta: **`/(root)`**
+4. Haz clic en el botón **Save**.
+5. En aproximadamente 1 minuto, tu página estará disponible en vivo en:
+   👉 **https://victorjosedev.github.io/minuta-la-concordia/**
