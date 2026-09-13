@@ -1449,59 +1449,117 @@ body.chapel-mode .agenda-item.sacrament-moment {
   background: linear-gradient(135deg, rgba(223, 185, 111, 0.07) 0%, var(--bg-card) 60%);
 }
 
-/* Rincón de Reverencia para Niños */
-.kids-reverence-box {
-  background: linear-gradient(135deg, rgba(217, 119, 6, 0.08) 0%, var(--bg-card) 65%);
-  border: 1.5px dashed rgba(217, 119, 6, 0.4);
+/* ==========================================================================
+   RINCÓN DE REVERENCIA PARA NIÑOS (TARJETA DEDICADA DE LA PRIMARIA)
+   ========================================================================== */
+.kids-reverence-card {
+  background: linear-gradient(135deg, rgba(223, 185, 111, 0.12) 0%, var(--bg-card) 75%);
+  border: 1.5px solid rgba(223, 185, 111, 0.45);
   border-radius: var(--radius-md);
-  padding: 12px 14px;
-  margin-top: 10px;
+  padding: 16px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+  margin: 4px 0 8px;
+  transition: all var(--transition-normal);
 }
 
-.kids-box-left {
+body.chapel-mode .kids-reverence-card {
+  background: linear-gradient(135deg, rgba(223, 185, 111, 0.1) 0%, var(--bg-card) 75%);
+  border-color: rgba(223, 185, 111, 0.35);
+}
+
+.kids-card-content {
+  flex: 1;
+}
+
+.kids-card-top {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  margin-bottom: 6px;
 }
 
-.kids-box-icon {
-  font-size: 1.5rem;
+.kids-card-badge {
+  background: rgba(223, 185, 111, 0.2);
+  color: var(--lds-navy);
+  border: 1px solid var(--lds-gold);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
-.kids-box-title {
-  font-size: 0.88rem;
+body.chapel-mode .kids-card-badge {
+  color: var(--lds-gold-light);
+}
+
+.kids-card-title {
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-primary);
+  margin: 0;
 }
 
-.kids-box-desc {
-  font-size: 0.74rem;
+.kids-card-desc {
+  font-size: 0.8rem;
   color: var(--text-secondary);
+  line-height: 1.45;
+  margin: 0;
 }
 
 .btn-open-kids-modal {
-  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  background: linear-gradient(135deg, #c5933d 0%, #9a6d1a 100%);
   color: #ffffff;
   border: none;
-  padding: 7px 14px;
+  padding: 10px 18px;
   border-radius: var(--radius-pill);
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  gap: 8px;
   cursor: pointer;
-  box-shadow: 0 3px 8px rgba(217, 119, 6, 0.3);
+  box-shadow: 0 3px 10px rgba(154, 109, 26, 0.3);
   flex-shrink: 0;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
 }
 
 .btn-open-kids-modal:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(154, 109, 26, 0.4);
+}
+
+@media (max-width: 580px) {
+  .kids-reverence-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px 16px;
+    gap: 12px;
+  }
+  
+  .kids-card-top {
+    flex-wrap: wrap;
+  }
+
+  .kids-card-desc {
+    font-size: 0.78rem;
+  }
+
+  .btn-open-kids-modal {
+    width: 100%;
+    padding: 11px 16px;
+    font-size: 0.84rem;
+  }
 }
 
 /* Galería de Arte Sagrado en el Modal de Niños */
