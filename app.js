@@ -9,10 +9,28 @@ const HYMNS_DATA = {
     id: "amazinggrace",
     number: "Himno #1010",
     title: "Amazing Grace (Sublime gracia)",
-    subtitle: "Himno de Apertura • Himnos: Para el hogar y la iglesia",
+    subtitle: "Himno de Apertura • Interpretado en inglés por los JAS del Barrio",
     url: "https://www.churchofjesuschrist.org/study/music/hymns-for-home-and-church/amazing-grace?lang=spa",
-    source: "Himnos: Para el hogar y la iglesia, N.º 1010 (Traducción oficial 2024 de Intellectual Reserve, Inc.)",
-    lyrics: `1. ¡Sublime gracia del Señor,
+    source: "Himnos: Para el hogar y la iglesia, N.º 1010 (Interpretado en inglés por los Jóvenes Adultos Solteros)",
+    lyrics: `[VERSIÓN EN INGLÉS - INTERPRETACIÓN DE LOS JAS]
+1. Amazing grace—how sweet the sound—
+That saved a wretch like me!
+I once was lost, but now am found,
+Was blind, but now I see.
+
+2. The Lord has promised good to me;
+His word my hope secures.
+He will my shield and portion be
+As long as life endures.
+
+3. Through many dangers, toils, and snares
+I have already come.
+His grace has brought me safe thus far,
+And grace will lead me home.
+
+────────────────────────────
+[TRADUCCIÓN OFICIAL EN ESPAÑOL - HIMNO N.º 1010]
+1. ¡Sublime gracia del Señor,
 que me salvó a mí!
 Errante iba y Él me halló;
 mis ojos ven por fin.
@@ -29,7 +47,7 @@ me lleva a Su hogar.
 
 — Letra: John Newton, 1779; traducción oficial al español © 2024 por Intellectual Reserve, Inc.
 — Música: Melodía folclórica estadounidense, siglo XIX; arreglo, 2024 (NEW BRITAIN).
-— Referencias: 2 Corintios 12:9–10; Moroni 10:32–33.`
+— Pasajes: 2 Corintios 12:9–10; Moroni 10:32–33; 2 Nefi 4:17, 30.`
   },
 
   santacena: {
