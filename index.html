@@ -22,16 +22,13 @@
   <div id="welcome-overlay" class="welcome-overlay" role="dialog" aria-modal="true" aria-label="Bienvenida a la Conferencia">
     <div class="welcome-glow"></div>
     <div class="welcome-content">
-      <div class="welcome-ornament">
-        <!-- Ícono decorativo reverente -->
-        <svg viewBox="0 0 24 24">
-          <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-        </svg>
+      <div class="welcome-christ-wrap">
+        <img class="welcome-christ-img" src="img/jesucristo.jpg" alt="Jesucristo el Salvador">
       </div>
       <div class="welcome-eyebrow">Bienvenidos a la</div>
       <h1 class="welcome-title">Conferencia de Barrio<br><span style="color: #dfb96f;">La Concordia</span></h1>
       <div class="welcome-divider"></div>
-      <p class="welcome-subtitle">Programa y Minuta de la Reunión Sacramental</p>
+      <p class="welcome-subtitle">Programa y Minuta de la Conferencia</p>
       
       <!-- LEMA OFICIAL DE LA CONFERENCIA (2 NEFI 32:3) -->
       <div class="welcome-scripture">
@@ -102,7 +99,7 @@
         <svg viewBox="0 0 24 24">
           <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
         </svg>
-        <span>Capilla de La Concordia • Reunión Sacramental</span>
+        <span>Capilla de La Concordia</span>
       </div>
 
       <!-- Oficiales que presiden y dirigen (Obispo David Perez y Pte. Mendoza con fotos redondeadas) -->
@@ -130,7 +127,6 @@
 
       <div class="conference-info-bar">
         <span>Domingo de Conferencia • 11:00 a. m.</span>
-        <span>Reverencia en la Capilla</span>
       </div>
     </section>
 
@@ -154,12 +150,25 @@
     <!-- LISTA DE LA MINUTA (TIMELINE LITÚRGICO ORDENADO) -->
     <div id="agenda-list" class="agenda-list">
 
+      <!-- ==========================================
+           FASE I: APERTURA Y BIENVENIDA
+           ========================================== -->
+      <div class="liturgical-phase">
+        <div class="phase-pill">
+          <svg style="width:13px;height:13px;fill:currentColor;" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>Fase I • Apertura y Bienvenida</span>
+        </div>
+        <div class="phase-line"></div>
+      </div>
+
       <!-- 1. Preludio Musical -->
       <article class="agenda-item" data-step="1">
-        <div class="item-order-badge">1</div>
+        <div class="item-liturgical-icon" title="Preludio">
+          <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+        </div>
         <div class="item-body">
           <div class="item-header-meta">
-            <span class="item-category-tag">Música</span>
+            <span class="item-category-tag">Música Reverente</span>
           </div>
           <div class="item-title">Preludio Musical</div>
           <div class="item-subtitle">Tiempo de reverencia y meditación antes de dar inicio</div>
@@ -171,18 +180,13 @@
 
       <!-- 2. Bienvenida y Reconocimiento -->
       <article class="agenda-item" data-step="2">
-        <div class="item-order-badge">2</div>
+        <img class="item-avatar-left" src="img/david_perez.png" alt="David Perez" loading="lazy">
         <div class="item-body">
           <div class="item-header-meta">
             <span class="item-category-tag">Apertura</span>
           </div>
-          <div class="item-with-avatar">
-            <img class="item-inline-avatar" src="img/david_perez.png" alt="David Perez" loading="lazy">
-            <div>
-              <div class="item-title">Bienvenida y Reconocimiento</div>
-              <div class="item-subtitle">Dirige: David Perez (Obispo del Barrio La Concordia)</div>
-            </div>
-          </div>
+          <div class="item-title">Bienvenida y Reconocimiento</div>
+          <div class="item-subtitle">Dirige: David Perez (Obispo del Barrio La Concordia)</div>
           <div class="item-note">Reconocimiento a autoridades presidentes y miembros visitantes</div>
         </div>
         <button class="item-status-btn" type="button" aria-label="Marcar completado">
@@ -192,13 +196,13 @@
 
       <!-- 3. HIMNO DE APERTURA: AMAZING GRACE (SUBLIME GRACIA) -->
       <article class="agenda-item is-hymn" data-step="3">
-        <div class="item-order-badge">3</div>
+        <img class="hymn-cover-img" src="img/himnario_nuevo.png" alt="Himnario Nuevo" loading="lazy">
         <div class="item-body">
           <div class="item-header-meta">
-            <span class="item-category-tag">Himno de Apertura</span>
+            <span class="item-category-tag">Himno de Apertura • N.º 1010</span>
           </div>
           <div class="item-title">Amazing Grace (Sublime gracia)</div>
-          <div class="item-subtitle">JAS del Barrio La Concordia • En inglés y español (Himno N.º 1010)</div>
+          <div class="item-subtitle">JAS del Barrio La Concordia • En inglés y español</div>
           <div>
             <button class="hymn-action-pill gospel-lib-pill" data-hymn-key="amazinggrace" type="button">
               <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
@@ -213,7 +217,9 @@
 
       <!-- 4. PRIMERA ORACIÓN -->
       <article class="agenda-item" data-step="4">
-        <div class="item-order-badge">4</div>
+        <div class="item-liturgical-icon" title="Oración">
+          <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
         <div class="item-body">
           <div class="item-header-meta">
             <span class="item-category-tag">Oración</span>
@@ -227,7 +233,9 @@
 
       <!-- 5. Asuntos de la Conferencia y Sostenimientos -->
       <article class="agenda-item" data-step="5">
-        <div class="item-order-badge">5</div>
+        <div class="item-liturgical-icon" title="Asuntos">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
         <div class="item-body">
           <div class="item-header-meta">
             <span class="item-category-tag">Conferencia de Barrio</span>
@@ -241,15 +249,26 @@
         </button>
       </article>
 
+      <!-- ==========================================
+           FASE II: LA SAGRADA ORDENANZA
+           ========================================== -->
+      <div class="liturgical-phase">
+        <div class="phase-pill">
+          <svg style="width:13px;height:13px;fill:currentColor;" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5h-2V11h2v5.5zm0-7.5h-2V7h2v2z"/></svg>
+          <span>Fase II • La Sagrada Ordenanza</span>
+        </div>
+        <div class="phase-line"></div>
+      </div>
+
       <!-- 6. HIMNO SACRAMENTAL: LA SANTA CENA (#103) -->
       <article class="agenda-item is-hymn is-sacrament" data-step="6">
-        <div class="item-order-badge">6</div>
+        <img class="hymn-cover-img" src="img/himnario_clasico.png" alt="Himnario Clásico" loading="lazy">
         <div class="item-body">
           <div class="item-header-meta">
-            <span class="item-category-tag">Himno Sacramental</span>
+            <span class="item-category-tag">Himno Sacramental • N.º 103</span>
           </div>
           <div class="item-title">La Santa Cena</div>
-          <div class="item-subtitle">Congregación • Himno N.º 103</div>
+          <div class="item-subtitle">Congregación • Himnario de la Iglesia</div>
           <div>
             <button class="hymn-action-pill gospel-lib-pill" data-hymn-key="santacena" type="button">
               <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
@@ -263,27 +282,42 @@
       </article>
 
       <!-- 7. Administración de la Santa Cena -->
-      <article class="agenda-item" data-step="7">
-        <div class="item-order-badge">7</div>
+      <article class="agenda-item sacrament-moment" data-step="7">
+        <div class="item-liturgical-icon" title="Santa Cena">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
         <div class="item-body">
           <div class="item-header-meta">
-            <span class="item-category-tag">Ordenanza</span>
+            <span class="item-category-tag">Ordenanza Sagrada</span>
           </div>
           <div class="item-title">Administración de la Santa Cena</div>
           <div class="item-subtitle">Sacerdocio Aarónico</div>
-          <div class="item-note">Bendición y repartición del pan y del agua en reverencia</div>
+          <div class="item-note">Bendición y repartición del pan y del agua en memoria del Salvador Jesucristo</div>
         </div>
         <button class="item-status-btn" type="button" aria-label="Marcar completado">
           <svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
         </button>
       </article>
 
+      <!-- ==========================================
+           FASE III: MENSAJES DEL EVANGELIO Y MÚSICA
+           ========================================== -->
+      <div class="liturgical-phase">
+        <div class="phase-pill">
+          <svg style="width:13px;height:13px;fill:currentColor;" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+          <span>Fase III • Mensajes del Evangelio y Música</span>
+        </div>
+        <div class="phase-line"></div>
+      </div>
+
       <!-- 8. DISCURSANTE 1: Pta. Gladis Rondón -->
       <article class="agenda-item" data-step="8">
-        <div class="item-order-badge">8</div>
+        <div class="item-liturgical-icon" title="Discurso">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
         <div class="item-body">
           <div class="item-header-meta">
-            <span class="item-category-tag">Discurso</span>
+            <span class="item-category-tag">Primer Discurso</span>
           </div>
           <div class="item-title">Pta. Gladis Rondón</div>
           <div class="item-subtitle">Presidenta de la Sociedad de Socorro de Estaca</div>
@@ -295,18 +329,29 @@
 
       <!-- 9. DISCURSANTE 2: Leandro Semeco (Niño de la Primaria) -->
       <article class="agenda-item" data-step="9">
-        <div class="item-order-badge">9</div>
+        <img class="item-avatar-left" src="img/leandro_semeco.png" alt="Leandro Semeco" loading="lazy">
         <div class="item-body">
           <div class="item-header-meta">
             <span class="item-category-tag">Participación de los Niños</span>
           </div>
-          <div class="item-with-avatar">
-            <img class="item-inline-avatar" src="img/leandro_semeco.png" alt="Leandro Semeco" loading="lazy">
-            <div>
-              <div class="item-title">Leandro Semeco</div>
-              <div class="item-subtitle">Primaria del Barrio La Concordia</div>
+          <div class="item-title">Leandro Semeco</div>
+          <div class="item-subtitle">Primaria del Barrio La Concordia</div>
+
+          <!-- Rincón de Reverencia para Niños de la Primaria -->
+          <div class="kids-reverence-box">
+            <div class="kids-box-left">
+              <span class="kids-box-icon">🕊️</span>
+              <div>
+                <div class="kids-box-title">Rincón de Reverencia</div>
+                <div class="kids-box-desc">Láminas sagradas para los niños de la Primaria</div>
+              </div>
             </div>
+            <button id="btn-kids-modal" class="btn-open-kids-modal" type="button">
+              <svg style="width:13px;height:13px;fill:currentColor;" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 12.5c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              <span>Ver Láminas</span>
+            </button>
           </div>
+
         </div>
         <button class="item-status-btn" type="button" aria-label="Marcar completado">
           <svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
@@ -315,7 +360,9 @@
 
       <!-- 10. HIMNO ESPECIAL: GETSEMANÍ -->
       <article class="agenda-item is-hymn" data-step="10">
-        <div class="item-order-badge">10</div>
+        <div class="item-liturgical-icon" title="Himno Especial">
+          <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+        </div>
         <div class="item-body">
           <div class="item-header-meta">
             <span class="item-category-tag">Himno Especial</span>
@@ -336,18 +383,13 @@
 
       <!-- 11. DISCURSANTE 3: Pte. Castillo Argenis -->
       <article class="agenda-item" data-step="11">
-        <div class="item-order-badge">11</div>
+        <img class="item-avatar-left" src="img/pte_castillo.png" alt="Pte. Castillo Argenis" loading="lazy">
         <div class="item-body">
           <div class="item-header-meta">
             <span class="item-category-tag">Discurso</span>
           </div>
-          <div class="item-with-avatar">
-            <img class="item-inline-avatar" src="img/pte_castillo.png" alt="Pte. Castillo Argenis" loading="lazy">
-            <div>
-              <div class="item-title">Pte. Castillo Argenis</div>
-              <div class="item-subtitle">Presidencia de Estaca</div>
-            </div>
-          </div>
+          <div class="item-title">Pte. Castillo Argenis</div>
+          <div class="item-subtitle">Presidencia de Estaca</div>
         </div>
         <button class="item-status-btn" type="button" aria-label="Marcar completado">
           <svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
@@ -356,13 +398,13 @@
 
       <!-- 12. ESPECIAL DE CORO: COMO OS HE AMADO / LOVE ONE ANOTHER -->
       <article class="agenda-item is-hymn is-choir" data-step="12">
-        <div class="item-order-badge">12</div>
+        <img class="hymn-cover-img" src="img/himnario_clasico.png" alt="Himnario Clásico" loading="lazy">
         <div class="item-body">
           <div class="item-header-meta">
-            <span class="item-category-tag item-tag-choir">Especial de Coro</span>
+            <span class="item-category-tag item-tag-choir">Especial de Coro • N.º 203</span>
           </div>
           <div class="item-title">Como os he amado / Love One Another</div>
-          <div class="item-subtitle">Coro del Barrio La Concordia • Himno #203 (En inglés y español)</div>
+          <div class="item-subtitle">Coro del Barrio La Concordia • En inglés y español</div>
           <div>
             <button class="hymn-action-pill gospel-lib-pill" data-hymn-key="loveoneanother" type="button">
               <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
@@ -377,18 +419,13 @@
 
       <!-- 13. DISCURSANTE CONCLUYENTE: Pte. Mendoza -->
       <article class="agenda-item" data-step="13">
-        <div class="item-order-badge">13</div>
+        <img class="item-avatar-left" src="img/pte_mendoza.png" alt="Pte. Mendoza" loading="lazy">
         <div class="item-body">
           <div class="item-header-meta">
             <span class="item-category-tag">Mensaje Concluyente</span>
           </div>
-          <div class="item-with-avatar">
-            <img class="item-inline-avatar" src="img/pte_mendoza.png" alt="Pte. Mendoza" loading="lazy">
-            <div>
-              <div class="item-title">Pte. Mendoza</div>
-              <div class="item-subtitle">Presidente de Estaca</div>
-            </div>
-          </div>
+          <div class="item-title">Pte. Mendoza</div>
+          <div class="item-subtitle">Presidente de Estaca</div>
           <div class="item-note">Autoridad presidente de la conferencia</div>
         </div>
         <button class="item-status-btn" type="button" aria-label="Marcar completado">
@@ -396,15 +433,26 @@
         </button>
       </article>
 
+      <!-- ==========================================
+           FASE IV: CLAUSURA Y BENDICIÓN
+           ========================================== -->
+      <div class="liturgical-phase">
+        <div class="phase-pill">
+          <svg style="width:13px;height:13px;fill:currentColor;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          <span>Fase IV • Clausura y Bendición</span>
+        </div>
+        <div class="phase-line"></div>
+      </div>
+
       <!-- 14. HIMNO FINAL CONGREGACIONAL: TE DAMOS, SEÑOR, NUESTRAS GRACIAS (#10) -->
       <article class="agenda-item is-hymn" data-step="14">
-        <div class="item-order-badge">14</div>
+        <img class="hymn-cover-img" src="img/himnario_clasico.png" alt="Himnario Clásico" loading="lazy">
         <div class="item-body">
           <div class="item-header-meta">
-            <span class="item-category-tag">Himno de Clausura</span>
+            <span class="item-category-tag">Himno de Clausura • N.º 10</span>
           </div>
           <div class="item-title">Te damos, Señor, nuestras gracias</div>
-          <div class="item-subtitle">Congregación • Himno N.º 10</div>
+          <div class="item-subtitle">Congregación • Himnario de la Iglesia</div>
           <div>
             <button class="hymn-action-pill gospel-lib-pill" data-hymn-key="himnofinal" type="button">
               <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
@@ -419,7 +467,9 @@
 
       <!-- 15. ÚLTIMA ORACIÓN -->
       <article class="agenda-item" data-step="15">
-        <div class="item-order-badge">15</div>
+        <div class="item-liturgical-icon" title="Oración Final">
+          <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
         <div class="item-body">
           <div class="item-header-meta">
             <span class="item-category-tag">Oración Final</span>
@@ -433,10 +483,12 @@
 
       <!-- 16. POSTLUDIO MUSICAL -->
       <article class="agenda-item" data-step="16">
-        <div class="item-order-badge">16</div>
+        <div class="item-liturgical-icon" title="Postludio">
+          <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+        </div>
         <div class="item-body">
           <div class="item-header-meta">
-            <span class="item-category-tag">Música</span>
+            <span class="item-category-tag">Música Reverente</span>
           </div>
           <div class="item-title">Postludio Musical</div>
           <div class="item-subtitle">Acompañamiento musical de salida reverente</div>
@@ -498,7 +550,13 @@
         </button>
       </div>
       <div class="modal-body">
-        <div id="hymn-modal-source" class="hymn-source-badge">Biblioteca del Evangelio</div>
+        <div class="modal-hymn-cover-wrap" id="hymn-modal-cover-wrap">
+          <img id="hymn-modal-cover" class="modal-hymn-cover-img" src="img/himnario_clasico.png" alt="Himnario">
+          <div>
+            <div id="hymn-modal-source" class="hymn-source-badge">Biblioteca del Evangelio</div>
+            <div id="hymn-modal-num-tag" style="font-weight:700; font-size:0.82rem; color:var(--lds-gold); margin-top:4px;">Himno Oficial</div>
+          </div>
+        </div>
         <div id="hymn-modal-lyrics" class="hymn-lyrics">Letra oficial del himno...</div>
         
         <a id="hymn-modal-link" class="btn-gospel-library" href="#" target="_blank" rel="noopener noreferrer">
@@ -508,6 +566,52 @@
       </div>
       <div class="modal-footer">
         <button class="btn-action-full btn-copy-link" type="button" data-close-modal="hymn-modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL DE REVERENCIA PARA NIÑOS (PRIMARIA)
+       ========================================================================== -->
+  <div id="kids-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="kids-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-header-category">Primaria • Barrio La Concordia</span>
+          <h2 id="kids-modal-title" class="modal-title">Rincón de Reverencia</h2>
+        </div>
+        <button class="modal-close-btn" type="button" data-close-modal="kids-modal" aria-label="Cerrar modal">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="kids-quiet-challenge">
+          💛 <strong>Para los niños y las familias:</strong> Mira estas imágenes en silencio y recuerda cuánto te ama Jesucristo.
+        </div>
+
+        <div class="kids-art-card">
+          <img class="kids-art-img" src="img/cristo_ninos.jpg" alt="Jesucristo con los niños" loading="lazy">
+          <div class="kids-art-caption">
+            «Dejad a los niños venir a mí... porque de los tales es el reino de Dios.»<br>
+            <small style="color:var(--text-muted); font-weight:normal;">— Marcos 10:14</small>
+          </div>
+        </div>
+
+        <div class="kids-art-card">
+          <img class="kids-art-img" src="img/buen_pastor.jpg" alt="Jesucristo el Buen Pastor" loading="lazy">
+          <div class="kids-art-caption">
+            «Yo soy el buen pastor; y conozco mis ovejas, y las mías me conocen.»<br>
+            <small style="color:var(--text-muted); font-weight:normal;">— Juan 10:14</small>
+          </div>
+        </div>
+
+        <div class="kids-quiet-challenge" style="border-left-color: var(--lds-blue-primary); background: rgba(0, 80, 136, 0.08);">
+          💭 <strong>Pregunta de reflexión:</strong><br>
+          ¿Qué cosa buena que aprendiste hoy de Jesús puedes compartir con tu familia al volver a casa?
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-action-full btn-copy-link" type="button" data-close-modal="kids-modal">Volver a la Minuta</button>
       </div>
     </div>
   </div>

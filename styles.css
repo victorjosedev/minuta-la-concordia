@@ -149,6 +149,26 @@ body {
   animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+.welcome-christ-wrap {
+  width: 108px;
+  height: 108px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  border: 3px solid var(--lds-gold);
+  box-shadow: 0 0 35px rgba(223, 185, 111, 0.5), 0 8px 24px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  animation: floatSoft 4s ease-in-out infinite;
+  background: #002d5a;
+  flex-shrink: 0;
+}
+
+.welcome-christ-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .welcome-ornament {
   width: 72px;
   height: 72px;
@@ -364,7 +384,7 @@ body.chapel-mode .top-nav {
 .main-wrapper {
   max-width: 680px;
   margin: 0 auto;
-  padding: 16px 14px 100px;
+  padding: 16px 14px 125px;
 }
 
 /* ==========================================================================
@@ -1289,6 +1309,236 @@ body.chapel-mode .floating-dock {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
+}
+
+/* ==========================================================================
+   FASES LITÚRGICAS DE LA REUNIÓN (ELIMINA EL EFECTO PLANO / ENUMERADO)
+   ========================================================================== */
+.liturgical-phase {
+  margin: 22px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.phase-pill {
+  background: var(--lds-navy);
+  color: var(--lds-gold-light);
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--lds-gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+body.chapel-mode .phase-pill {
+  background: var(--lds-navy-deep);
+  border-color: rgba(223, 185, 111, 0.4);
+}
+
+.phase-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border-strong), transparent);
+}
+
+/* Ícono Litúrgico de cada tarjeta */
+.item-liturgical-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--lds-blue-light);
+  color: var(--lds-blue-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  transition: all var(--transition-normal);
+}
+
+.item-liturgical-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+body.chapel-mode .item-liturgical-icon {
+  background: rgba(0, 80, 136, 0.25);
+  color: var(--lds-gold-light);
+}
+
+.agenda-item.completed-item .item-liturgical-icon {
+  background: #e2fbe8;
+  color: #15803d;
+}
+
+body.chapel-mode .agenda-item.completed-item .item-liturgical-icon {
+  background: rgba(34, 197, 94, 0.2);
+  color: #86efac;
+}
+
+/* Avatar individual en el lateral izquierdo de la tarjeta */
+.item-avatar-left {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--lds-gold);
+  box-shadow: var(--shadow-sm);
+  margin-top: 2px;
+}
+
+/* Portadas de himnarios en las tarjetas de himnos */
+.hymn-with-cover {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hymn-cover-img {
+  width: 42px;
+  height: 56px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1.5px solid var(--lds-gold);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.hymn-cover-img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal de himno con portada grande */
+.modal-hymn-cover-wrap {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.modal-hymn-cover-img {
+  width: 54px;
+  height: 72px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 2px solid var(--lds-gold);
+  box-shadow: var(--shadow-md);
+  flex-shrink: 0;
+}
+
+/* Tarjeta especial del Momento Sacramental */
+.agenda-item.sacrament-moment {
+  border: 1.5px solid var(--lds-blue-primary);
+  background: linear-gradient(135deg, rgba(0, 80, 136, 0.06) 0%, var(--bg-card) 60%);
+}
+
+body.chapel-mode .agenda-item.sacrament-moment {
+  border-color: var(--lds-gold);
+  background: linear-gradient(135deg, rgba(223, 185, 111, 0.07) 0%, var(--bg-card) 60%);
+}
+
+/* Rincón de Reverencia para Niños */
+.kids-reverence-box {
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.08) 0%, var(--bg-card) 65%);
+  border: 1.5px dashed rgba(217, 119, 6, 0.4);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.kids-box-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.kids-box-icon {
+  font-size: 1.5rem;
+}
+
+.kids-box-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.kids-box-desc {
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+}
+
+.btn-open-kids-modal {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  color: #ffffff;
+  border: none;
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.76rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(217, 119, 6, 0.3);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.btn-open-kids-modal:hover {
+  transform: translateY(-1px);
+}
+
+/* Galería de Arte Sagrado en el Modal de Niños */
+.kids-art-card {
+  background: var(--bg-main);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-sm);
+}
+
+.kids-art-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.kids-art-caption {
+  padding: 10px 14px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+  background: var(--bg-card);
+}
+
+.kids-quiet-challenge {
+  background: rgba(223, 185, 111, 0.15);
+  border-left: 3px solid var(--lds-gold);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.45;
 }
 
 /* ==========================================================================

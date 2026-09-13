@@ -8,6 +8,7 @@ const HYMNS_DATA = {
   amazinggrace: {
     id: "amazinggrace",
     number: "Himno #1010",
+    cover: "img/himnario_nuevo.png",
     title: "Amazing Grace (Sublime gracia)",
     subtitle: "Himno de Apertura • Interpretado en inglés por los JAS del Barrio",
     url: "https://www.churchofjesuschrist.org/study/music/hymns-for-home-and-church/amazing-grace?lang=spa",
@@ -53,6 +54,7 @@ me lleva a Su hogar.
   santacena: {
     id: "santacena",
     number: "Himno #103",
+    cover: "img/himnario_clasico.png",
     title: "La Santa Cena",
     subtitle: "Himno Sacramental • Himnario de la Iglesia",
     url: "https://www.churchofjesuschrist.org/study/manual/hymns/while-of-these-emblems-we-partake-saul?lang=spa",
@@ -85,6 +87,7 @@ para reinar con el Señor.
   getsemani: {
     id: "getsemani",
     number: "Canción Especial",
+    cover: "img/cristo_ninos.jpg",
     title: "Getsemaní",
     subtitle: "Himno Especial • Música de la Iglesia / Revista Liahona",
     url: "https://www.churchofjesuschrist.org/study/liahona/2018/03/children/gethsemane?lang=spa",
@@ -121,6 +124,7 @@ Getsemaní.
   loveoneanother: {
     id: "loveoneanother",
     number: "Himno #203 / #308",
+    cover: "img/himnario_clasico.png",
     title: "Como os he amado / Love One Another",
     subtitle: "Especial de Coro • En inglés y español",
     url: "https://www.churchofjesuschrist.org/study/manual/hymns/love-one-another?lang=spa",
@@ -149,6 +153,7 @@ si os amáis unos a otros.
   himnofinal: {
     id: "himnofinal",
     number: "Himno #10",
+    cover: "img/himnario_clasico.png",
     title: "Te damos, Señor, nuestras gracias",
     subtitle: "Himno Final Congregacional • Himnario de la Iglesia",
     url: "https://www.churchofjesuschrist.org/study/manual/hymns/we-thank-thee-o-god-for-a-prophet?lang=spa",
@@ -277,6 +282,15 @@ function setupEventListeners() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
+
+  // Rincón de Reverencia para Niños (Primaria)
+  const btnKids = document.getElementById("btn-kids-modal");
+  if (btnKids) {
+    btnKids.addEventListener("click", () => {
+      const modal = document.getElementById("kids-modal");
+      if (modal) modal.classList.add("open");
+    });
+  }
 }
 
 // Descartar la animación de entrada suavemente
@@ -358,6 +372,20 @@ function openHymnModal(hymnKey) {
   document.getElementById("hymn-modal-source").textContent = hymn.source;
   document.getElementById("hymn-modal-lyrics").textContent = hymn.lyrics;
   
+  const coverEl = document.getElementById("hymn-modal-cover");
+  const numTagEl = document.getElementById("hymn-modal-num-tag");
+  if (coverEl) {
+    if (hymn.cover) {
+      coverEl.src = hymn.cover;
+      coverEl.style.display = "block";
+    } else {
+      coverEl.style.display = "none";
+    }
+  }
+  if (numTagEl) {
+    numTagEl.textContent = hymn.number || "Himno Oficial";
+  }
+
   const linkBtn = document.getElementById("hymn-modal-link");
   linkBtn.href = hymn.url;
   linkBtn.target = "_blank";
